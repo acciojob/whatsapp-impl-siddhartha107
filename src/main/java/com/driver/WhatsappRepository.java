@@ -33,7 +33,7 @@ public class WhatsappRepository {
 
     public String  createUser(String name, String mobile) throws Exception{
         if(userMobile.contains(mobile)){
-            throw  new Exception("User already exist");
+            throw  new Exception("User already exists");
         }
         userMobile.add(mobile);
         User user = new User(name,mobile);
